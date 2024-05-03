@@ -1,57 +1,42 @@
 \version "2.16.2"
 
 \header {
-  title = "today"
+  title = "more of now"
   composer = "skudella (The Royal Backwash)"
 
 }
 
 global = {
+  \key fis \minor
   \time 4/4
-  \tempo 4 = 220
+  \tempo 4 = 170
 }
 
 harmonies = \chordmode {
   \germanChords
+a1 a1 a1:maj7/gis a1:maj7/gis d1/g d1/g fis1:m fis1:m 
+a1 a1 a1:maj7/gis a1:maj7/gis d1/g d1/g fis1:m fis1:m 
+
+%g1 d e:m e:m
+%g1 d e:m e:m
+%g1 d fis b:m
+%g g:maj7 a a:7
+d1 a e:m e:m
+d1 a e:m e:m
 g1 d fis:m b:m
-g fis:m a e
-g d fis:m b:m
-c a:m g b:7
-%c a:m d:7 b:7
+g g:maj7 a a:7
 
-e gis:m cis:m e
-a a:maj7 d b:7
-e gis:m cis:m e
-a a:maj7 d b:7
+d d a a cis cis fis:m fis:m
+d d a a cis cis fis:m fis:m
+d d a a cis cis cis cis
 
-g d a a
-g d a a:7 
-
-d fis:m b:7 b:7 g e:m a a:7
-d fis:m b:7 b:7 g e:m a a:7
+fis:m fis:m d d a1 a1 a1:maj7/gis a1:maj7/gis
+fis:m fis:m d d a1 a1 e:m e:m
 
 }
 
 violinMusic = \relative c'' {
-\key d \major
   
-r4 b4 b8 a g8 fis~
-fis4 fis fis8 e8 d cis~
-cis4 r4 r4 cis8 cis~
-cis4 d cis d 
-g8 r8 b4 b8 a g8 fis~
-fis4 fis fis8 g8 a e~
-e1
-gis2 a4 b4
-r4 b4 b8 a g8 fis~
-fis4 fis fis8 e8 d cis~
-cis4 r4 r4 cis8 cis~
-cis4 d cis d
-g4. e8~e4 g8 e
-a b c e~e d c4
-b8 g~g a~a b a g
-b1
-
 }
 
 leadGuitarMusic = \relative c'' {
@@ -82,66 +67,84 @@ trumpettwoChorusMusic = \relative c'' {
 
 }
 
-leadMusicverse = \relative c'{
-\key e \major
+leadMusicverse = \relative c''{
   
-R1*15
-r2 e4 fis 
-\bar ".|:"
+a8 a a fis a4 fis8 a8~
+a4 r2 r8 fis
+a4 a a fis8 a~
+a4 r2 r8 fis
+a8 a~a a~a fis~fis a~
+a b~b a~a r8 a4
+a4 fis8( e) fis e~e fis~
+fis4 r2 r8 b
+a4 a8 fis a a fis a~
+a4 r2 r8 fis
+a a a fis a4 fis8 a8~
+a4 r2 r8 b
+a8 a~a a~a fis~fis a~
+a b~b a~a r8 a4
+a4 fis8( e) fis(e~e) fis~
+fis fis fis fis8 r8 
 
-gis b b gis
-b2 cis4 fis,
-e1
-r2 e4 dis
-cis e fis e
-fis2 e4 fis~
-fis1
-r2 e4 fis 
-gis b b gis
-b2 cis4 fis,
-e1
-r2 e4 dis
-cis e fis e
-fis2 e4 fis~
-fis1
-r1
-\bar ":|."
+
 
 }
 
 leadMusicprechorus = \relative c''{
-\key d \major
-  
-r2 g4 g8 b8~
-b4 a g a 
-fis4. e8~e4 cis4. d8~d4 r2
-r2 g4 g8 b8~
-b4 a g a 
-e4. b'8~b4 a4~
+cis cis4
+d8 a~a a~a r d cis~
+cis4 a8 a~a4 fis8 b~
+b1
+r2 r8
+cis8 cis4
+d8 a~a a~a r d cis~
+cis4 a8 a~a4 fis8 b~
+b1
+r2 r8
+cis8 cis8 cis8
+d8 a~a a~a r d cis~
+cis4 a8 a~a4 fis8 a~
+a2( cis 
+d) r4. fis,8
+g8 g~g g~g2~
+g2. r8 b
+cis cis~cis cis~cis2~
+cis2 r8 
+
 
 }
 
 leadMusicchorus = \relative c''{
-a4 a, d e8 fis~
-\bar ".|:"
-
-fis4 r4 r4. a,8
-fis' fis8~fis4 e4 d8 fis8~
-fis4 r4 r4. a,8
-fis' fis8~fis4 e4 d8 g8~
-g b,4. r4. a8
-fis' fis8~fis4 e4 d4
-cis4. d8~d4 e4
-r4 a, d e8 fis~
-fis4 r4 r4. a,8
-fis' fis8~fis4 e4 d8 fis8~
-fis4 r4 r4. a,8
-fis' fis8~fis4 e4 d8 g8~
-g b,4. r4. a8
-fis' fis8~fis4 e4 d4
-cis4. d8~d4 e4
+cis8 cis4
+d d d d
+d8 d d d d cis b cis~
+cis1
+r2 r8 a8 b4
+cis cis cis cis
+cis8 cis cis cis cis a~a fis~
+fis1
+r2. a8 a8
+d d d d~d4 a8 a8
+d4 d4 d8( cis) b cis~
+cis cis2..
+r2. a8 a8
+cis4 cis8 cis8~cis4 cis 
+cis cis cis8(b) a cis~
+cis fis,2.. 
 r1
-\bar ":|."
+d'4 d a8 a~a d~
+d d~d a~a r r a
+cis4 cis8 cis a a~a cis~
+cis cis~cis a~a b cis4
+cis2 r8 b cis4 
+cis2 r8 b cis4 
+cis4 cis4 cis4 cis4 
+cis8 b cis cis cis cis8~cis8 cis8(
+fis,2)r2
+R1*15
+\bar "|."
+
+  
 }
 
 leadMusicBridge = \relative c'''{
@@ -151,28 +154,35 @@ leadMusicBridge = \relative c'''{
 leadWordsOne = \lyricmode { 
 \set stanza = "1."
 
-when you think a -- bout your life of fai -- lures
-it's not ea -- sy to _ keep the faith
-or be -- lieve there'll be a spree to -- mor -- row
-gol -- den a -- ges that will brighten your day
-
-
+Ta -- ra works from nine to five 
+she lives from five to nine 
+the ot -- hers val  -- ue gems and gold 
+she val -- ues pre -- cious time 
+Her friends all _ wor -- ry 'bout her 
+she wor -- ries how her time des -- cends 
+they're stri -- ving for the sim -- ple days 
+she's stri -- ving for ev -- ery -- thing else
 }
 
 leadWordsPrechorus = \lyricmode {
-\set stanza = "prechorus 1"
-
-it's these days when the world shows it's grey side
-it's these days you want to stay in bed
+\set stanza = "prechorus"
+'cause its not en -- ough to pay a chea -- per price 
+'cause its not en -- ough to get the big -- ger bites 
+no no its not en -- ough to live a gor -- geous life 
+its not en -- ough,  its not enough 
 }
 
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
+I want more, more, more, more, more of it and I want it now 
+I want more, more, more, more, wan -- na see it all some -- how  
+twen -- ty --  thou -- sand per -- cent and the glass is spil -- ling o -- ver 
+thou -- sand miles per hour no chance of go -- ing slo -- wer 
+I don't want no af -- ter -- life,
+I don't wan -- na be a good house -- wife
 
-_ but not to -- day, to -- day we're gon -- na live 
-to -- day we're gon -- na go out, to -- day we're gon -- na set things straight
-in -- stead to -- day, to -- day we're gon -- na give
-our -- self an -- ot -- her memor -- ry, to -- day we're gon -- na seize the day
+I want more, I want more, I want more, more, more, more, more,
+I wan -- na more of now
 }
 
 
@@ -185,27 +195,17 @@ leadWordsBridge = \lyricmode {
 }
 
 leadWordsTwo = \lyricmode { 
-\set stanza = "2."
-when you look out -- side your ti -- ny win -- dows
-and you can not see the sun __ _  shine
-it is hard to sa -- vour peace and shel -- ter 
-and you can't see a -- ny -- thing de -- vine   
+
 }
 
 leadWordsThree = \lyricmode {
-\set stanza = "3."
-when you think a -- bout the trouble you've been through
-it is hard to see the bright -- est side
-al -- though you have to ad -- mit that it's been
-ov -- ver ma -- ny parts on hell~of a ride
+
 }
 
 leadWordsFour = \lyricmode {
-\set stanza = "4."
-when you think a -- bout your favour -- ite mo -- ments
-un -- ac -- ces -- sib -- ly trapped in the past
-just a sha -- dow of what they had been __ _
-but __ _ for -- tu -- nate -- ly, so~are the worst
+
+
+
 }
 
 
@@ -214,36 +214,22 @@ leadWordsFive = \lyricmode {
 }
 
 backingOneVerseMusic = \relative c'' {
-R1*32
+
 }
 
 backingOnePrechorusMusic = \relative c'' {
-R1*7
+
 }
 
 backingOneChorusMusic = \relative c'' {
-\key d \major
 
-r4 e d cis8 d~
-d4 r4 r4. d8
-d a8~a4 d4 e8 cis8~
-cis4 r4 r4. cis8
-cis e8~e4 d4 cis8 d8~
-d b4. r4. g8
-b a8~a4 g4 a4
-e4. fis8~fis4 g4
-r4 e' d cis8 d~
-d4 r4 r4. d8
-d a8~a4 d4 e8 cis8~
-cis4 r4 r4. cis8
-cis e8~e4 d4 cis8 d8~
-d b4. r4. g8
-b a8~a4 g4 a4
-e4. fis8~fis4 g4
-r1
 }
 
 backingOneBridgeMusic = \relative c'' {
+
+
+ 
+  
   
 }
 
@@ -297,7 +283,7 @@ backingTwoBridgeWords = \lyricmode {
 
 derbassVerse = \relative c {
   \clef bass
-
+  
 }
 
 \score {
@@ -422,6 +408,6 @@ derbassVerse = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #2
+  page-count = #1
   
 }
