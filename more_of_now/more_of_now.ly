@@ -134,7 +134,7 @@ cis fis,2..
 r1
 d'4 d a8 a~a d~
 d d~d a~a r r a
-cis4 cis8 cis a a~a cis~
+cis4 cis8 cis a a a cis~
 cis cis~cis a~a b cis4
 cis2 r8 b cis4 
 cis2 r8 b cis4 
@@ -179,7 +179,8 @@ I want more, more, more, more, wan -- na see it all some -- how
 twen -- ty --  thou -- sand per -- cent and the glass is spil -- ling o -- ver 
 thou -- sand miles per hour no chance of go -- ing slo -- wer 
 I don't want no af -- ter -- life,
-I don't wan -- na be a good house -- wife
+I must spend each day as a joy -- ful dive
+%don't wan -- na be a good house -- wife
 
 I want more, I want more, I want more, more, more, more, more,
 I wan -- na more of now
