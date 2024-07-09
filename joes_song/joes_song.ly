@@ -9,7 +9,7 @@
 global = {
   \key g \major
   \time 4/4
-  \tempo 4 = 151
+  \tempo 4 = 166
 }
 
 harmonies = \chordmode {
@@ -110,7 +110,11 @@ leadMusicBridge = \relative c'''{
 }
 
 leadWordsOne = \lyricmode { 
-
+\set stanza = "1."
+The mu -- sic starts, the lights turn on, and then the drum -- kit hit the groove.
+The bass gui -- tar and vi -- o -- lin both join in  -- to the tune. 
+The har -- mo -- nies and me -- lo dies guit -- tar and vo -- cals bring,
+are giv -- ing you the star -- ting sig -- nal. You are be -- gin -- ning to swing.
 }
 
 leadWordsPrechorus = \lyricmode {
@@ -136,7 +140,11 @@ leadWordsBridge = \lyricmode {
 }
 
 leadWordsTwo = \lyricmode { 
-
+\set stanza = "2."
+The se -- cond verse, who would have guessed is not to differ -- rent from the first.
+The su -- per -- no -- vas and cham -- pagne ex -- plode in -- to a burst.
+The bar's on fire, you can't de -- ny the beau -- ty of the juice,
+that wa -- ter, malt and hops cre -- ate. Drink up and be -- come __ _ foot -- loose.
 }
 
 leadWordsThree = \lyricmode {
