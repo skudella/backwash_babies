@@ -111,10 +111,10 @@ leadMusicBridge = \relative c'''{
 
 leadWordsOne = \lyricmode { 
 \set stanza = "1."
-The mu -- sic starts, the lights turn on, and then the drum -- kit hit the groove.
+The mu -- sic starts, the lights go on, and then the drum -- kit hits the groove.
 The bass gui -- tar and vi -- o -- lin both join in  -- to the tune. 
-The har -- mo -- nies and me -- lo dies guit -- tar and vo -- cals bring,
-are giv -- ing you the star -- ting sig -- nal. You are be -- gin -- ning to swing.
+The har -- mo -- nies and me -- lo dies, guit -- tar and vo -- cals bring,
+are giv -- ing you the star -- ting sig -- nal. You are _ star -- ting to swing.
 }
 
 leadWordsPrechorus = \lyricmode {
@@ -127,7 +127,7 @@ leadWordsChorus = \lyricmode {
 with your toes, and your hips, there's the beat, you call dips. 
 but you're in -- cap -- ab -- le of mat -- ching the rhy -- thm of the blues.
 and you smile, and you dance, hear the sound, take your chance,
-but you're un -- ab -- le to hit a tone that fits the tune.
+but you're un -- ab -- le to hit a note that fits the tune.
 }
 
 
@@ -144,10 +144,16 @@ leadWordsTwo = \lyricmode {
 The se -- cond verse, who would have guessed is not to differ -- rent from the first.
 The su -- per -- no -- vas and cham -- pagne ex -- plode in -- to a burst.
 The bar's on fire, you can't de -- ny the beau -- ty of the juice,
-that wa -- ter, malt and hops cre -- ate. Drink up and be -- come __ _ foot -- loose.
+that wa -- ter, malt and hops cre -- ate. Drink up _ and go get  foot -- loose.
 }
 
 leadWordsThree = \lyricmode {
+\set stanza = "3."
+It's get -- ting late, the sun sets down, and you are slow -- ly get -- ting tired.
+The beer kicks in, with ale and gin, no bed or rest in sight.
+So you fight on, try to stay strong, to keep you self a  -- wake.  
+%Till fin -- al -- ly, you can give up and you are _ fal -- ling a -- sleep. 
+Till fin -- al -- ly, you can give up you're sleep -- ing no min -- ute to late.
 
 }
 
