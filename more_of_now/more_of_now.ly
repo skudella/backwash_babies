@@ -196,7 +196,14 @@ leadWordsBridge = \lyricmode {
 }
 
 leadWordsTwo = \lyricmode { 
-
+  Tho -- mas got it sor -- ted out
+  has all that man may crave
+  is li -- ving off of en -- vious -- ness
+  though fee -- ling like a slave
+  to work and ex -- _ pec -- ta -- tions
+  that keep him in his litt -- le wheel
+  the time has come to break it loose
+  to get to know what's good and real
 }
 
 leadWordsThree = \lyricmode {
