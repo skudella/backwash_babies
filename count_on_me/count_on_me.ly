@@ -1,5 +1,7 @@
 \version "2.16.2"
 
+\include "swing.ly"
+
 \header {
   title = "Count On Me"
   composer = "Timo Doll (The Royal Backwash)"
@@ -23,10 +25,10 @@ harmonies = \chordmode {
   e4. fis8:m~fis2:m e4. b8~b2 
   e4. fis8:m~fis2:m e4. b8~b2 
   e4. fis8:m~fis2:m e4. b8~b2 
-  cis1 dis1
+  fis1:m/cis b1
   
   e cis:m gis a/e
-  a e a gis:m
+  a e a b:6
   e cis:m gis a/e
   a e a gis:m
   e cis:m gis a/e
@@ -42,7 +44,7 @@ harmonies = \chordmode {
 
 leadMusicverse = \relative c' {
   
-  r8 e gis e fis r8 r4 
+  r8^\markup { \italic shuffled} e gis e fis r8 r4 
   fis8 gis fis e~e fis~fis r
   r e gis e fis e r4 
   fis8 gis fis e~e fis~fis e
@@ -165,7 +167,7 @@ leadWordsBridge = \lyricmode {
   One and two and three and four
   I gave it all and I will ev -- er -- more
   Five and six and se -- ven and eight
-  Fall down one me, I can lift your weight
+  Fall down on me, I can lift your weight
   One and two and three and four
   I gave it all and I will ev -- er -- more
   Five and six and se -- ven and eight
@@ -244,7 +246,25 @@ backingTwoChorusWords = \lyricmode {
 }
 
 derbassVerse = \relative c { \clef bass
-
+  
+  R1*40
+  cis4. a8 cis4. a8 
+  cis4. a8 cis4. a8 
+  e4 gis b gis 
+  fis b dis a
+  cis4. a8 cis4. a8 
+  cis4. a8 cis4. a8 
+  e4 gis b gis 
+  fis b dis a
+  cis4. a8 cis4. a8 
+  cis4. a8 cis4. a8 
+  e4 gis b gis 
+  fis b dis a
+  cis4. a8 cis4. a8 
+  cis4. a8 cis4. a8 
+  e4 gis b gis 
+  fis b dis a
+  
 
 }
 
@@ -258,7 +278,7 @@ violinMusic = \relative c'' {
   r8 gis gis gis fis4 e 
   cis8 e~e e cis4 e
   r8 gis gis gis fis4 e 
-  e8 cis e cis e4 gis
+  dis8 b dis b dis4 fis
     
 }
 
@@ -284,7 +304,9 @@ leadGuitarMusic = \relative c' {
   
 }
 
-document = {
+document = 
+
+  {
 <<
     \new ChordNames \with {midiIntrument = "electric guitar (muted)"} {
       
@@ -345,8 +367,8 @@ document = {
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadchorus" \leadWordsChorus
       \lyricsto "leadchorus" \leadWordsChorusTwo
-      \new Lyrics \with { alignBelowContext = #"lead" }
-      \lyricsto "leadprechorus" \leadWordspreChorus
+      %\new Lyrics \with { alignBelowContext = #"lead" }
+      %\lyricsto "leadprechorus" \leadWordspreChorus
       %\new Lyrics \with { alignBelowContext = #"lead" }
       %\lyricsto "leadverse" \leadWordsFour
       %\new Lyrics \with { alignBelowContext = #"lead" }
@@ -355,8 +377,8 @@ document = {
       \lyricsto "leadverse" \leadWordsTwo
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadverse" \leadWordsOne
-      \new Lyrics \with { alignBelowContext = #"lead" }
-      \lyricsto "leadoutro" \leadWordsChorus
+      %\new Lyrics \with { alignBelowContext = #"lead" }
+      %\lyricsto "leadoutro" \leadWordsChorus
       
      
       % we could remove the line about this with the line below, since
@@ -379,17 +401,19 @@ document = {
       
       \new Staff = "Staff_bass" {
         \set Staff.instrumentName = #"Bass"
-        %\set Staff.midiInstrument = #"electric bass (pick)"
-        \set Staff.midiInstrument = #"distorted guitar"
-        %\transpose c c { \global \derbassVerse }
+        \set Staff.midiInstrument = #"electric bass (pick)"
+        %\set Staff.midiInstrument = #"distorted guitar"
+        \transpose c c { \global \derbassVerse }
       }      % again, we could replace the line above this with the line below.
       % \new Lyrics \lyricsto "backingTwoes" \backingTwoWords
     >>
   >>
   }
+
   
 
 \score {
+  
   \document
   %\midi {}
   \layout {
@@ -400,6 +424,7 @@ document = {
   }
   %\removeWithTag #'nomidi
   %\midi{}
+  
 }
 
 \score {
@@ -411,6 +436,6 @@ document = {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #2
+  page-count = #3
   
 }
