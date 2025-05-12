@@ -169,13 +169,13 @@ leadWordspreChorus = \lyricmode {
 leadWordsBridge = \lyricmode {
 \set stanza = "bridge"
 
-  One and two and three and four
+  one and two and three and four
   I gave it all and I will ev -- er -- more
-  Five and six and se -- ven and eight
-  Fall down on me, I can lift your weight
-  One and two and three and four
+  five and six and se -- ven eight
+  just fall down on me, I can lift your weight
+  one and two and three and four
   I gave it all and I will ev -- er -- more
-  Five and six and se -- ven eight
+  five and six and se -- ven eight
   just fall down on me, I can lift your weight
 
 }
@@ -183,7 +183,7 @@ leadWordsBridge = \lyricmode {
 leadWordsTwo = \lyricmode { 
 \set stanza = "2."
   
-  Your eyes are tense
+  your eyes are tense
   fore -- head is swea -- ty
   your prob -- lems will seem ful -- some and pet -- ty
   Just close your eyes and put trust in my stur -- dy crutch
