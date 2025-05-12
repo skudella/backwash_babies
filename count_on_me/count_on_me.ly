@@ -48,16 +48,16 @@ leadMusicverse = \relative c' {
   fis8 gis fis e~e fis~fis r
   r e gis e fis e r4 
   fis8 gis fis e~e fis~fis e
-  b'4 gis8 a~a fis a~a
+  b'4 gis8 a~a fis a4
   b4 gis8 b~b fis b4
   cis4 r r2
   dis4. cis8 ais4 g
   
   r4 gis8  e fis e8 r4 
   fis8 gis fis e~e fis~fis r
-  r e gis e fis e r4 
+  r e gis e fis e r8 e 
   fis8 gis fis e~e fis~fis e
-  b'4 gis8 a~a fis a~a
+  b'4 gis8 a~a fis a4
   b4 gis8 b~b fis b4
   cis4 r4 r8 a b cis
   dis4 r4 r2
@@ -124,29 +124,34 @@ leadMusicBridge = \relative c''{
 leadWordsOne = \lyricmode { 
 \set stanza = "1." 
 
-  You need a rest
+  you need a rest
   some -- thing rock stea -- dy
   I will be wai -- ting
   al -- ways be rea -- dy
 
-  Just close your eyes and fall in -- to my sway -- ing arms
-  deep and dear -- ly
+  just close your eyes and fall prey to my catch -- ing arms 
+  mad -- ly deep -- ly
+  
+  wind down on me ta -- king you high -- er 
+  and if you want to tell me your de -- si -- re
+  go ride the plane to a right -- full place in a cloud
+  you'll start to count
 
 }
 
 leadWordsChorus = \lyricmode {
 \set stanza = "chorus"
 
-  Dar -- ling you can count on me
-  Coun -- ting up and coun -- ting down
-  don't need to pray to the lord
+  dar -- ling you can count on me
+  coun -- ting up and coun -- ting down
+  don't be a -- shamed nor shi -- ver
   I will pro -- mise you
   to stand to your full at -- ten -- tion
-  Just sit down and take a breath
+  just sit down and take a breath
   I will let you count on me
   you'll count to ten and a -- gain
   ba -- by count on me
-  you'll Count on me and count your  bless -- ings
+  you'll count on me and count your  bless -- ings
 
 
 }
@@ -170,13 +175,24 @@ leadWordsBridge = \lyricmode {
   Fall down on me, I can lift your weight
   One and two and three and four
   I gave it all and I will ev -- er -- more
-  Five and six and se -- ven and eight
-  Fall down one me, I can lift your weight
+  Five and six and se -- ven eight
+  just fall down on me, I can lift your weight
 
 }
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "2."
+  
+  Your eyes are tense
+  fore -- head is swea -- ty
+  your prob -- lems will seem ful -- some and pet -- ty
+  Just close your eyes and put trust in my stur -- dy crutch
+  tru -- ly dear -- ly
+  
+  I'm de -- vo -- ted
+  un -- der your skin _
+  but don't you wor -- ry
+  I'm your brace with -- in _
 
 
 }
@@ -429,13 +445,14 @@ document =
 
 \score {
   \removeWithTag #'nomidi
+  \tripletFeel 8
   \document
   \midi{}
 }
 
-#(set-global-staff-size 19)
+#(set-global-staff-size 18)
 
 \paper {
-  page-count = #3
+  page-count = #2
   
 }
