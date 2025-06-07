@@ -30,12 +30,19 @@ harmonies = \chordmode {
 
  e2 e2:7 f2 f2
  f2:m f4:m7 f4:6 as2 g2
+ 
+ r1
+ c1:m g1 f1:m as2 g2
+ c1:m d1 f2..:m2  g8~g1
+ c1:m g1 f1:m as2 g2
+ c1:m d1 f2..:m g8~g1
+ 
 }
 
 violinMusic = \relative c'' {
  R1*17
  \break
- \key c \major
+ \key c \minor
  e4 c4
  g8 c8 d4
  e2
@@ -171,12 +178,37 @@ leadMusicchorus = \relative c''{
  d8 c8 b8 d8 
  c4. c8
  d2 
+
 }
 
 leadMusicBridge = \relative c''{
 
 }
 
+
+leadMusicOutro = \relative c''{
+  R1*4
+  \key c \minor
+r2 r8 c, b c
+c4 g c8 d c b~
+b2 r8 b c b 
+as4 as8 as b as g as
+g4 ~g8( f8 g8) g8 b d
+d4 c8 g g c d  d~
+d2 r8 d8 c b
+as8 as8 as8 as as( c) as g~
+g2 r8 es' d es
+es4 c8 c es8 g es d~
+d2 r8 es d es 
+es4 c8 c es f es es~
+es2 r8 d f d
+es4 c8 c c d es fis~
+fis2 es8 es d c
+as4 as8 as as8 c as g~
+g2 r2
+\bar "|."
+
+}
 leadWordsOne = \lyricmode { 
 \set stanza = "1." 
 it is a beat that burns in your heart
@@ -206,12 +238,28 @@ leadWordsBridge = \lyricmode {
 
 leadWordsTwo = \lyricmode { 
 \set stanza = "2." 
+it is a twitch that's straight from your heart
+it is a force that will tear your mind a -- part
+it is that hate grow -- ing lou -- der and louder
+a bomb to be dropped and a world to be shocked
 
+it is na -- ive to af -- firm its o -- kay
+it's of no help to just qui -- et -- ly pray
+it is a bliss if you don't care at all
+an ease in the head and for sure a sweet med
 }
 
 leadWordsThree = \lyricmode {
-\set stanza = "3." 
+\set stanza = "outro." 
+it is that calm right be -- fore the storm
+it is the love that gets for -- fei -- ted and torn
+it is a world get -- ting dul -- ler and duller
+the men get part -- ed and the weak get hurt
 
+i know it's pain -- less to keep your eyes shut
+but now i beg you to go with your gut
+it is a bliss if you care for it all
+an ease in the head and for sure a sweet med
 }
 
 leadWordsFour = \lyricmode {
@@ -398,15 +446,17 @@ derbassVerse = \relative c {
         \new Voice = "leadprechorus" { << \transpose c c, { \leadMusicprechorus } >> }
         \new Voice = "leadchorus" { << \transpose c c { \leadMusicchorus } >> }
         \new Voice = "leadbridge" { << \transpose c c, { \leadMusicBridge } >> }
+        \new Voice = "leadoutro" {<< \transpose c c { \leadMusicOutro } >> }
       }
+      \new Lyrics \with { alignBelowContext = #"lead" }
+      \lyricsto "leadoutro" \leadWordsThree
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadbridge" \leadWordsBridge
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadchorus" \leadWordsChorus
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadverse" \leadWordsFour
-      \new Lyrics \with { alignBelowContext = #"lead" }
-      \lyricsto "leadverse" \leadWordsThree
+
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadverse" \leadWordsTwo
       \new Lyrics \with { alignBelowContext = #"lead" }
@@ -452,6 +502,6 @@ derbassVerse = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #2
+  page-count = #3
   
 }
