@@ -14,13 +14,13 @@ global = {
 
 harmonies = \chordmode {
   \germanChords
- %R1
- %c1:m g1 f1:m as2 g2
- %c1:m d1 f1:m g1
- %c1:m g1 f1:m as2 g2
- %c1:m d1 f1:m g1
+ R1
+ c1:m g1 f1:m as2 g2
+ c1:m d1 f2..:m2  g8~g1
+ c1:m g1 f1:m as2 g2
+ c1:m d1 f2..:m g8~g1
  
- R1*17
+ %R1*17
 
  c2 c2 a2:m g2
  e2 e2:7 f2 g2
@@ -219,24 +219,25 @@ leadWordsFour = \lyricmode {
 
 }
 backingOneVerseMusic = \relative c'' {
-r2 r8 c8 b8 b8
-c4 r4 r2
-r2 r8 b8 a8 b8
-as4 r4 r2
-r2 r8  c8 b8 b8
-c4 r4 r2
-r4 r8 ges8 ges ges b8 as8~
-as4 r4 r4. b8
-r2 r8 c8 b8 b8
-c4 r4 r2
-r2 r8 b8 a8 b8
-as4 r4 r2
-r2 r8  c8 b8 b8
-c4 r4 r2
-r2 ges8 ges ges b8
-as4 r4 r4. b8 
-r2 r8 b8 c8 d8 
- \break
+%r2 r8 c8 b8 b8
+%c4 r4 r2
+%r2 r8 b8 a8 b8
+%as4 r4 r2
+%r2 r8  c8 b8 b8
+%c4 r4 r2
+%r4 r8 ges8 ges ges b8 as8~
+%as4 r4 r4. b8
+%r2 r8 c8 b8 b8
+%c4 r4 r2
+%r2 r8 b8 a8 b8
+%as4 r4 r2
+%r2 r8  c8 b8 b8
+%c4 r4 r2
+%r2 ges8 ges ges b8
+%as4 r4 r4. b8 
+%r2 r8 b8 c8 d8 
+R1*17
+\break
  \key c \major
 }
 
@@ -258,23 +259,24 @@ backingOneChorusWords = \lyricmode {
 }
 
 backingTwoVerseMusic = \relative c' {
-r2 r8 f8 f8 f8 
-g4 r4 r2
-r2 r8 g8 g8 as8
-f4 r4 r2
-r2 r8 f8 f8 f8 
-g4 r4 r2
-r4 r8 d8 d8 d8 es8 f8~
-f4 r4 r4. g8
-r2 r8 f8 f8 f8 
-g4 r4 r2
-r2 r8 g8 g8 as8
-f4 r4 r2
-r2 r8 f8 f8 f8 
-g4 r4 r2
-r2 d8 d8 d8 es8
-f4 r4 r4. g8 
-r2 r8 g8 g8 g8
+%r2 r8 f8 f8 f8 
+%g4 r4 r2
+%r2 r8 g8 g8 as8
+%f4 r4 r2
+%r2 r8 f8 f8 f8 
+%g4 r4 r2
+%r4 r8 d8 d8 d8 es8 f8~
+%f4 r4 r4. g8
+%r2 r8 f8 f8 f8 
+%g4 r4 r2
+%r2 r8 g8 g8 as8
+%f4 r4 r2
+%r2 r8 f8 f8 f8 
+%g4 r4 r2
+%r2 d8 d8 d8 es8
+%f4 r4 r4. g8 
+%r2 r8 g8 g8 g8
+R1*17
  \break
  \key c \major 
 }
@@ -313,23 +315,42 @@ and we will this me -- lo -- dy
 
 derbassVerse = \relative c {
   \clef bass
-  r1
-  c4 c4 g8 c8 c8 d8~
-  d2 g,2
-  f'4 f8 f8 d8 c8 c8 d8
-  es2 d2
-  c4 c4 g8 c8 c8 d8~
-  d2 fis,2
-  f'4 f8 f8 d8 c8 c8 d8
-  r2 g,2
-  c4 c4 g8 c8 c8 d8~
-  d2 g,2
-  f'4 f8 f8 d8 c8 c8 d8
-  es2 d2
-  c4 c4 g8 c8 c8 d8~
-  d2 fis,2
-  f'4 f8 f8 d8 c8 c8 g8
+  %r1
+  %c4 c4 g8 c8 c8 d8~
+  %d2 g,2
+  %f'4 f8 f8 d8 c8 c8 d8
+  %es2 d2
+  %c4 c4 g8 c8 c8 d8~
+  %d2 fis,2
+  %f'4 f8 f8 d8 c8 c8 d8
+  %r2 g,2
+  %c4 c4 g8 c8 c8 d8~
+  %d2 g,2
+  %f'4 f8 f8 d8 c8 c8 d8
+  %es2 d2
+  %c4 c4 g8 c8 c8 d8~
+  %d2 fis,2
+  %f'4 f8 f8 d8 c8 c8 g8
+  %R1
+  
   R1
+  c4 r8 c8~c4 r4 
+  r8 g g g as g f g 
+  f4 r8 f8~f4 r4 
+  es8 es r8 es d d es d 
+  c'4 r8 c8~c4 r4 
+  r8 d d d es d c d
+  f4 r8 f,8~f8  c' as g~
+  g8 r2..
+  c4 r8 c8~c4 r4 
+  r8 g g g as g f g 
+  f4 r8 f8~f4 r4 
+  es8 es r8 es d d es d 
+  c'4 r8 c8~c4 r4 
+  r8 d d d es d c d
+  f4 r8 f,8~f8  c' as g~
+  g8 r2..  
+  
 }
 
 \score {
@@ -431,6 +452,6 @@ derbassVerse = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #3
+  page-count = #2
   
 }
