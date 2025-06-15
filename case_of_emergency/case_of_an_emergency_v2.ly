@@ -16,7 +16,7 @@ harmonies = \chordmode {
   \germanChords
  R1
  c1:m g1 f1:m as2 g2
- c1:m d1 f2..:m2  g8~g1
+ c1:m d1 f2..:m  g8~g1
  c1:m g1 f1:m as2 g2
  c1:m d1 f2..:m g8~g1
  
@@ -33,7 +33,7 @@ harmonies = \chordmode {
  
  r1
  c1:m g1 f1:m as2 g2
- c1:m d1 f2..:m2  g8~g1
+ c1:m d1 f2..:m  g8~g1
  c1:m g1 f1:m as2 g2
  c1:m d1 f2..:m g8~g1
  
@@ -42,7 +42,7 @@ harmonies = \chordmode {
 violinMusic = \relative c'' {
  R1*17
  \break
- \key c \minor
+ \key c \major
  e4 c4
  g8 c8 d4
  e2
@@ -342,19 +342,20 @@ f4. f8 g2
 }
 
 backingTwoChorusWords = \lyricmode {
-it is a beat
-it is that heat
-it is a flame
-a bass to be dropped
-stopped
+%it is a beat
+%it is that heat
+%it is a flame
+%a bass to be dropped
+%stopped
 
-it is a way
-it is o -- kay
-it is a bliss
-an ease in the head
-med
+%it is a way
+%it is o -- kay
+%it is a bliss
+%an ease in the head
+%med
 
-so you get em -- erg -- en -- cy
+%so you get 
+em -- erg -- en -- cy
 you use the  this dance with me
 and we will this i -- ro -- ny
 and we will this me -- lo -- dy
@@ -385,19 +386,19 @@ derbassVerse = \relative c {
   c4 r8 c8~c4 r4 
   r8 g g g as g f g 
   f4 r8 f8~f4 r4 
-  es8 es r8 es d d es d 
-  c'4 r8 c8~c4 r4 
+  es'8 es r8 es d d es d 
+  c4 r8 c8~c4 r4 
   r8 d d d es d c d
   f4 r8 f,8~f8  c' as g~
   g8 r2..
   c4 r8 c8~c4 r4 
   r8 g g g as g f g 
   f4 r8 f8~f4 r4 
-  es8 es r8 es d d es d 
-  c'4 r8 c8~c4 r4 
+  es'8 es r8 es d d es d 
+  c4 r8 c8~c4 r4 
   r8 d d d es d c d
   f4 r8 f,8~f8  c' as g~
-  g8 r2..  
+  g8 r2..
   
 }
 
