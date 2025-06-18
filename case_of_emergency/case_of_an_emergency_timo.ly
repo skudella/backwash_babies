@@ -29,27 +29,27 @@ harmonies = \chordmode {
  e2 e2:7 f2 f2
  f2:m f4:m7 f4:6 as2 g2
 
- r1
- c1:m g1 f1:m as2 g2
- c1:m d1 f1:m g1
- c1:m g1 f1:m as2 g2
- c1:m d1 f1:m g1
+ % r1
+%  c1:m g1 f1:m as2 g2
+%  c1:m d1 f1:m g1
+%  c1:m g1 f1:m as2 g2
+%  c1:m d1 f1:m g1
 
 }
 
 violinMusic = \relative c'' {
  R1*17
- \break
- \key c \major
+% \break
+% \key c \major
  R1*8
-   \break
-  \key c \minor
+%   \break
+%  \key c \minor
  R2*4
  as'4. as8
  c8. b16~b8 as8
  as8. bes16~bes8 as8
  b2
-\bar ":|."
+%\bar ":|."
 }
 
 leadGuitarMusic = \relative c'' {
@@ -132,8 +132,8 @@ leadMusicverse = \relative c''{
  d2 c8 d8 c8 f8
  es4 c8 c8 es8 f8 es8 d8
  R1
- \break
- \key c \major
+% \break
+% \key g \major
 }
 
 leadMusicprechorus = \relative c'{
@@ -164,25 +164,41 @@ leadMusicBridge = \relative c''{
 
 
 leadMusicOutro = \relative c''{
-  \key c \major
-r2 r8 a gis a
-a4 e a8 b a gis~
-gis2 r8 gis a gis 
-f4 f8 f gis f e f
-e4 ~e8( d8 e8) e8 gis b
-b4 a8 e e a b  b~
-b2 r8 b8 a gis
-f8 f8 f8 f f( a) f e~
-e2 r8 c' b c
-c4 a8 a c8 e c b~
-b2 r8 c b c 
-c4 a8 a c d c c~
-c2 r8 b d b
-c4 a8 a a b c dis~
-dis2 c8 c b a
-f4 f8 f f8 a f e~
-e2 r2
-\bar "|."
+% \key c \major
+% r2 r8 a gis a
+% a4 e a8 b a gis~
+% gis2 r8 gis a gis 
+% f4 f8 f gis f e f
+% e4 ~e8( d8 e8) e8 gis b
+% b4 a8 e e a b  b~
+% b2 r8 b8 a gis
+% f8 f8 f8 f f( a) f e~
+% e2 r8 c' b c
+% c4 a8 a c8 e c b~
+% b2 r8 c b c 
+% c4 a8 a c d c c~
+% c2 r8 b d b
+% c4 a8 a a b c dis~
+% dis2 c8 c b a
+% f4 f8 f f8 a f e~
+% e2 r2
+% \bar "|."
+ % r2 r8 es8 d8 es8
+%  es4 c4 g8 c8 c8 d8~
+%  d2 r8 d8 c8 d8
+%  c4 c8 c8 d8 c8 d8 f8
+%  es2 r8 es8 d8 es8
+%  es4 c8 c8 g8 c8 c8 d8~
+%  d4 r8 c8 d8 c8 f8 es8~
+%  es4 c8 c8 es8 f8 es8 d8 
+%  r2 r8 es8 d8 es8
+%  es4 c8 c8 g8 c8 c8 d8~
+%  d2 r8 d8 c8 d8
+%  c4 c8 c8 d8 c8 f8 es8~
+%  es2 r8 es8 d8 es8
+%  es4 c8 c8 g8 c8 c8 d8~
+%  d2 c8 d8 c8 f8
+%  es4 c8 c8 es8 f8 es8 d8
 
 }
 
@@ -226,6 +242,7 @@ it is na -- ive to af -- firm its o -- kay
 it's of no help to just qui -- et -- ly pray
 it is a bliss if you don't care at all
 an ease in the head and for sure a sweet med
+
 }
 
 leadWordsThree = \lyricmode {
@@ -233,10 +250,10 @@ leadWordsThree = \lyricmode {
 it is that calm right be -- fore the storm
 it is the love that gets for -- fei -- ted and torn
 it is a world get -- ting dul -- ler and duller
-the men get part -- ed and the weak get hurt
+the men that get part and the weak that get fucked
 
 i know it's pain -- less to keep your eyes shut
-but now i beg you to go with your gut
+but now i need you to re -- gain your voice
 it is a bliss if you care for it all
 an ease in the head and for sure a sweet med
 }
@@ -246,12 +263,13 @@ leadWordsFour = \lyricmode {
 
 }
 backingOneVerseMusic = \relative c'' {
-R1*17
+R1*16
+r2 r8 g g g
 }
 
 backingOneChorusMusic = \relative c'' {
- \break
- \key c \major
+% \break
+% \key c \major
  r2.. c8
  c4. b8
  b8 d d e 
@@ -269,6 +287,7 @@ backingOneChorusMusic = \relative c'' {
 }
 
 backingOneChorusWords = \lyricmode {
+  so you get
  em -- erg -- en -- cy
 you use the stairs to the cei -- ling  and you dance with me
 this i -- ro -- ny
@@ -309,8 +328,8 @@ derbassVerse = \relative c {
   d2 g,2
   f'4 f8 f8 d8 c8 c8 g8
   R1
-  \break
-  \key c \major
+%  \break
+%  \key c \major
   e'4 c4
  g8 c8 d4
  e2
@@ -334,7 +353,7 @@ derbassVerse = \relative c {
   <<
     \new ChordNames {
       \set chordChanges = ##t
-      \transpose c a, { \global \harmonies }
+      \transpose c e, { \global \harmonies }
     }
 
     \new StaffGroup <<
@@ -343,14 +362,14 @@ derbassVerse = \relative c {
         \set Staff.instrumentName = #"Violin"
         \set Staff.shortInstrumentName = #"V."
         \set Staff.midiInstrument = #"violin"
-         \transpose c a, { \violinMusic }
+         \transpose c e, { \global \violinMusic }
       }
-      \new Staff = "Guitar" {
-        \set Staff.instrumentName = #"Guitar"
-        \set Staff.shortInstrumentName = #"G."
-        \set Staff.midiInstrument = #"overdriven guitar"
-        \transpose c a { \global \leadGuitarMusic }
-      }
+%      \new Staff = "Guitar" {
+%        \set Staff.instrumentName = #"Guitar"
+%        \set Staff.shortInstrumentName = #"G."
+%        \set Staff.midiInstrument = #"overdriven guitar"
+%        \transpose c a { \global \leadGuitarMusic }
+%      }
         \new Staff = "Trumpets" <<
         \set Staff.instrumentName = #"Trumpets"
 	\set Staff.shortInstrumentName = #"T."
@@ -371,14 +390,14 @@ derbassVerse = \relative c {
 	\set Staff.instrumentName = #"Lead"
 	\set Staff.shortInstrumentName = #"L."
         \set Staff.midiInstrument = #"voice oohs"
-        \new Voice = "leadverse" { << \transpose c a, { \global \leadMusicverse } >> }
-        \new Voice = "leadprechorus" { << \transpose c a, { \leadMusicprechorus } >> }
-        \new Voice = "leadchorus" { << \transpose c a, { \leadMusicchorus } >> }
-        \new Voice = "leadbridge" { << \transpose c a, { \leadMusicBridge } >> }
-        \new Voice = "leadoutro" {<< \transpose c c { \leadMusicOutro } >> }
+        \new Voice = "leadverse" { << \transpose c e, { \global \leadMusicverse } >> }
+        \new Voice = "leadprechorus" { << \transpose c e, { \leadMusicprechorus } >> }
+        \new Voice = "leadchorus" { << \transpose c e, { \leadMusicchorus } >> }
+        \new Voice = "leadbridge" { << \transpose c e, { \leadMusicBridge } >> }
+        \new Voice = "leadoutro" {<< \transpose c e { \leadMusicOutro } >> }
       }
       \new Lyrics \with { alignBelowContext = #"lead" }
-      \lyricsto "leadoutro" \leadWordsThree
+      \lyricsto "leadverse" \leadWordsThree
       \new Lyrics \with { alignBelowContext = #"lead" }
       \lyricsto "leadbridge" \leadWordsBridge
       \new Lyrics \with { alignBelowContext = #"lead" }
@@ -401,11 +420,11 @@ derbassVerse = \relative c {
  	\set Staff.instrumentName = #"Backing"
  	\set Staff.shortInstrumentName = #"B."
          \set Staff.midiInstrument = #"voice oohs"
- 	\new Voice = "backingOnes" { \voiceOne << \transpose c a, { \global \backingOneVerseMusic \backingOneChorusMusic } >> }
- 	\new Voice = "backingTwoes" { \voiceTwo << \transpose c a, { \global \backingTwoVerseMusic \backingTwoChorusMusic } >> }
+ 	\new Voice = "backingOnes" { \voiceOne << \transpose c e { \global \backingOneVerseMusic \backingOneChorusMusic } >> }
+ 	\new Voice = "backingTwoes" { \voiceTwo << \transpose c e { \global \backingTwoVerseMusic \backingTwoChorusMusic } >> }
  
        >>
-       \new Lyrics \with { alignAboveContext = #"backing" }
+       \new Lyrics \with { alignBelowContext = #"backing" }
        \lyricsto "backingOnes" \backingOneChorusWords
        \new Lyrics \with { alignBelowContext = #"backing" }
        \lyricsto "backingTwoes" \backingTwoChorusWords
@@ -414,7 +433,7 @@ derbassVerse = \relative c {
         \set Staff.instrumentName = #"Bass"
         \set Staff.midiInstrument = #"electric bass (pick)"
         %\set Staff.midiInstrument = #"distorted guitar"
-        \transpose c a, { \global \derbassVerse }
+        \transpose c e { \global \derbassVerse }
       }      % again, we could replace the line above this with the line below.
       % \new Lyrics \lyricsto "backingTwoes" \backingTwoWords
     >>
@@ -431,6 +450,6 @@ derbassVerse = \relative c {
 #(set-global-staff-size 19)
 
 \paper {
-  page-count = #3
+  page-count = #2
   
 }
